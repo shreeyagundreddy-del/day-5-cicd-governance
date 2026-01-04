@@ -1,0 +1,13 @@
+expectations:
+  - table: customer_data
+    rules:
+      - column: customer_id
+        expectation: not_null
+
+      - column: email
+        expectation: not_null
+
+      - column: age
+        expectation: value_between
+        min: 18
+        max: 100

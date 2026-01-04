@@ -1,0 +1,12 @@
+environments:
+  dev:
+    approval_required: false
+
+  staging:
+    approval_required: false
+
+  prod:
+    approval_required: true
+    approvers:
+      - data_steward
+      - data_owner

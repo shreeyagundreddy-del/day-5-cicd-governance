@@ -1,0 +1,12 @@
+entity: customer
+match_rules:
+  - field: email
+    match_type: exact
+    confidence: 1.0
+
+  - field: customer_id
+    match_type: exact
+    confidence: 0.9
+
+survivorship:
+  primary_key: customer_id
